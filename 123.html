@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<html>
+
+<meta charset="utf-8">
+<title>Задание 1</title>
+</head>
+<body>
+<h1>Задание №1</h1>
+<h2 id="head1">Страница с нумерованным списком гиперссылок</h2>
+<ol>
+<li><a href="http://fckrasnodar.ru/">Абсолютная гиперссылка на главную страницу сайта</a></li>
+<li><a href="https://fckrasnodar.ru/">Абсолютная гиперссылка на главную страницу сайта в протоколе https</a></li>
+<li><a href="ftp://fckrasnodar.ru/files/file.html">Ссылка на файл на сервере FTP без авторизации</a></li>
+<li><a href="ftp://user:123@fckrasnodar.ru/files/file.html">Ссылка на файл на сервере FTP с авторизацией</a></li>
+<li><a href="http://shop.fckrasnodar.ru#anchor">Ссылка на фрагмент страницы некоторого сайта</a></li>
+<li><a href="#top">Ссылка на фрагмент текущей страницы</a></li>
+<li><a href="http://fckrasnodar.ru?parameter1=p1&parameter2=p2">Ссылка с двумя параметрами в URL</a></li> 
+<li>
+Список ссылок основной навигации сайта с подписями title
+<ul>
+<li><a href="#head1" title="Нумерованный список гиперссылок">Нумерованный список гиперссылок</a></li>
+<li><a href="#head2" title="Форма">Форма</a></li>
+</ul>
+</li>
+<li><a>Ссылка без href</a></li>
+<li><a href="">Ссылка с пустым href</a></li>
+<li><a href="http://fckrasnodar.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+<noindex> <a href="http://fckrasnodar.ru"> не индексируется </noindex> </a></li>
+<li><p>Контекстная <a href="http://fckrasnodar.ru/">ссылка</a> в тексте абзаца</p></li>
+<li>
+Ссылка-изображение<br/>
+<a href="http://fckrasnodar.ru/"><img src="https://s5o.ru/storage/simple/ru/ugc/8d/5c/aa/b6/ruu41be43d86.." width="310" height="190" alt="Описание картинки"></a>
+</li>
+<li>
+Ссылки из прямоугольных и круглых областей картинки<br/>
+<img src="https://i2.rozetka.ua/goods/5857678/46598520_images_585767800.." width="330" height="250" alt="Описание картинки" usemap="#mymap">
+<map name="mymap">
+<area shape="rect" coords="90,20,35,200" href="https://shop.fckrasnodar.ru/category/equipment/" alt="Прямоугольная область">
+<area shape="circle" coords="30,20,100" href="https://shop.fckrasnodar.ru/category/gifts/" alt="Круглая область">
+</map>
+</li>
+<li><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
+<li><a href="./about/page">Относительная ссылка на страницу в каталоге about</a></li>
+<li><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+<li><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+<li><a href="/">Сокращенная ссылка на главную</a></li>
+<li><a href="/pages/page">Сокращенная ссылка на внутреннюю</a></li>
+<a id="top"></a>
+</ol>
+
+<h2 id="head2">Форма</h2>
+<form action="http://example.com" method="POST">
+<label>
+Имя:<br/>
+<input name="yourname">
+</label><br/>
+<label>
+e-mail:<br/>
+<input name="e-mail"
+type="email"/>
+</label><br/>
+<label>
+Дата рождения:<br/>
+<input name="dateofbirth"
+type="date"/>
+</label><br/>
+
+<label>
+Выберете, что любите больше всего:<br/>
+<select name="p" multiple="multiple">
+<option value="immortality" selected="selected">гулять</option>
+<option value="passingthroughwalls">играть в компьютерные игры</option>
+<option value="levitation">читать книги</option>
+</select>
+</label><br/>
+
+<label>
+Ваша любимая книга:<br/>
+<textarea name="bio">...</textarea>
+</label><br/>
+С контрактом ознакомлен(а):<br/>
+<label>
+<input type="checkbox" checked="checked" name="check-1"/>
+</label><br/>
+<input type="submit" value="Отправить"/>
+</form>
+</body>
+</html>            
